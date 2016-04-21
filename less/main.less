@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+
+@body-bg: white;
+@myDiv-fg: black;
+@shadow-color: #23203b;
+@input-color: lighten(#AB9E95, 10%);
+@input-border-color: #5E5165;
+@button-background-color: #14B9BE;
+
+
+
+body {
+  background-color: @body-bg;
+  background: transparent;
+  text-align: center;
+}
+div.myDiv {
+  color: @myDiv-fg;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: @body-bg;
+
+}
+
+body, input, button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+}
+input[type="text"]::-webkit-input-placeholder {
+   color: #255254;
+}
+input[type="password"]::-webkit-input-placeholder {
+   color: #255254;
+}
+.nav{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  background: #14B9BE;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.sidebar{
+  position:fixed;
+  top:50px;
+  bottom: 0;
+  width: 19%;
+  background-color: #B73144;
+  color:#FAEBD7;
+}
+.awesome-jar{
+  font-weight: lighter;
+  float: left;
+  margin-left: 19px;
+  color: black;
+  position: relative;
+}
+.normalize-input {
+  display: block;
+  width: auto;
+  height: auto;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: none;
+  border-radius: 0px;
+}
+.button-container{
+  margin: auto;
+  width: 350px;
+  position: relative;
+  top: 270px;
+
+
+}
+a:hover{
+  text-decoration: none;
+
+}
+
+button {
+  margin-top: 20px;
+  background: @button-background-color;
+  border: none;
+  font-size: 1.6em;
+  font-weight: 300;
+  padding: 5px 0;
+  width: 20%;
+  border-radius: 3px;
+  color: #FAEBD7;
+
+  &:hover {
+    background: tint(#5FC3E4, 14%);
+    -webkit-animation: hop 1s;
+    animation: hop 1s;
+    text-decoration: none;
+  }
+}
+
+.group-class{
+  float: none;
+  margin: 0 auto;
+  display: inline-flex;
+
+}
+.input-box{
+  border: 1px solid black;
+  width: 40%;
+  margin:auto;
+  margin-top: 11%;
+  z-index: 1;
+
+    .motivation{
+      margin: 20px;
+    }
+
+    .jar-text{
+      width: 65% !important;
+      margin: 0 auto;
+      margin-bottom: 2%;
+      font-size: 1.4em;
+      font-weight:400;
+      color: black;
+      display: inline-flex;
+    }
+    .jar-btn{
+      width:16% !important;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 2%;
+      background-color: #14B9BE;
+      display: inline-block;
+
+      &:hover {
+        background: tint(#14C7CC, 14%);
+        -webkit-animation: hop 1s;
+        animation: hop 1s;
+        text-decoration: none;
+      }
+    }
+}
+
+.jar-item{
+  text-align:left;
+  font-size: 20px;
+  font-weight: 400;
+  margin: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  height: 20px;
+  border-radius: 2px;
+}
+ul{
+  list-style-type: none;
+}
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-align-items: left;
+   align-items: left;
+   -webkit-justify-content: left;
+   justify-content: left;
+}
+.loginBtn{
+  margin: auto;
+  margin-top: 20%;
+  background-color: #FCF8E3;
+  color:black
+}
+
+
+.container{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 35%;
+  left: 47%;
+}
+
+.square{
+  height: 94%;
+  width: 94%;
+  background: radial-gradient(#E55D87 , #5FC3E4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -47% 0 0 -47%;
+}
+.square2{
+  height: 94%;
+  width: 94%;
+  background: #B73144;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -47% 0 0 -47%;
+}
+.square3{
+  height: 94%;
+  width: 94%;
+  background: #009999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -47% 0 0 -47%;
+}
+.square4{
+  height: 94%;
+  width: 94%;
+  background: #0E82C5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -47% 0 0 -47%;
+}
+
+
+.black{ 
+  background: white;
+  animation: rotate 15s infinite ease-out; 
+}
+
+@keyframes rotate{
+  0%{ transform: rotate(225deg);
+   }
+  50%{
+    transform: rotate(135deg)
+  }
+  100%{ transform: rotate(315deg);
+  }  
+}
