@@ -1,5 +1,5 @@
 {
-  "name": "light jar",
+  "name": "light-jar",
   "version": "0.1.0",
   "devDependencies": {
     "babel": "^5.6.10",
@@ -29,6 +29,7 @@
     "react-dom": "^0.14.6",
     "react-redux": "^4.4.1",
     "react-router": "^2.0.0-rc5",
+    "react-router-redux": "^4.0.2",
     "redux": "^3.3.1",
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.0.1",
@@ -36,7 +37,7 @@
     "webpack-hot-middleware": "^2.10.0"
   },
   "scripts": {
-    "start": "server/server.js",
+    "start": "node server.js",
     "watch": "./node_modules/.bin/webpack-dev-server",
     "test": "jest"
   },

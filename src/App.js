@@ -1,9 +1,18 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var routes = require('./config/routes.js');
-// import { Provider } from 'react-redux';
-// import configureStore from './store/configureStore'
 
-// const store = configureStore()
+import 'babel-polyfill'
+import React from 'react'
+import { render } from 'react-dom'
+import { browserHistory } from 'react-router'
+import { syncHistoryWithStore } from 'react-router-redux'
+import Root from './containers/Root'
+import configureStore from './store/configureStore'
+console.log('yooooo')
+const store = configureStore()
+console.log('app store', syncHistoryWithStore)
+const history = syncHistoryWithStore(browserHistory, store)
+console.log('app history', history)
+render(
 
-ReactDOM.render(routes , document.getElementById('app'));
+  <Root store={store} history={history} />,
+  document.getElementById('app')
+)
